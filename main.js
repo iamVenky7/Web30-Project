@@ -1,36 +1,35 @@
-//let’s convert Kelvin to Celsius, then to Fahrenheit.
+let userName = " venky ";
+userName ? console.log(`Hello, ${userName}!`) : console.log('Hello.!');
+const userQuestion = " u need Magic Eight Ball?";
+console.log(userName  + userQuestion);
+const  randomNumber =  Math.floor(Math.random() * 8);
+console.log(randomNumber);
 
-// created a variable name called kelvin and the value of kelvin will constant. so, we are using const to declare a variable..
-
-const kelvin = 293;  // try with 0 also
- 
-//subtracting 273 from the kelvin variable. and the result is stored in celsius variable
-
-const celsius = kelvin - 273;
-
-//used equation to create fahrenheit and variable named as farenheit
-
-let Fahrenheit = celsius * (9/5) + 32
-
-//used the .floor() object to convert decimal to normal number  
-
-Fahrenheit = Math.floor(Fahrenheit);
-
-
-console.log(`The temperature is ${Fahrenheit} degrees Fahrenheit.`);
-
-
-
-/*  lets convert celsius to Newton  
-
-const celsius = 30;
-
-let Newton = Celsius * (33/100)
-
-Newton = Math.floor(Newton);
-
-console.log( `temperature in newton is ${Newton}`);
-*/
-
-
-
+let eightBall = '';
+switch(randomNumber) {
+  case 0:
+  eightBall = 'It is certain';
+  break;
+  case 1:
+  eightBall = 'It is decidedly so';
+  break;
+  case 2:
+  eightBall = 'Reply hazy try again';
+  break;
+  case 3:
+  eightBall = 'Cannot predict now';
+  break;
+  case 4:
+  eightBall = 'Do not count on it';
+  break;
+  case 5:
+  eightBall = 'My sources say no';
+  break;
+  case 6:
+  eightBall = 'Outlook not so good';
+  break;
+  case 7:
+  eightBall = 'Signs point to yes';
+  break;
+}
+console.log(`the magic 8 Ball's is ${eightBall}`);
